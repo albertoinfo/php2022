@@ -1,0 +1,53 @@
+<!-- VERSION DONDE TODOS ESTA GENERADO POR EL CLIENTE -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+table, td, th {
+	border: 0px;
+}
+</style>
+</head>
+<script>
+	function random_int(min, max) {
+		return Math.floor((Math.random() * (max - min + 1)) + min);
+	}
+	
+	function generar() {
+		var nred  =  random_int(50,500);
+		var ngreen = random_int(50,500);
+		var nblue  = random_int(50,500);
+		document.getElementById("tred")  .width  =  nred; 
+		document.getElementById("tgreen").width  =  ngreen;
+		document.getElementById("tblue") .width  =  nblue;
+		document.getElementById("vred") .innerHTML   = " Rojo("+nred+")";
+		document.getElementById("vgreen").innerHTML  = " Verde("+ngreen+")";
+		document.getElementById("vblue") .innerHTML  = " Rojo("+nblue+")";
+		setTimeout(generar,2000);
+		
+	}
+	
+</script>
+<body onload="generar()">
+	<h1> CON JAVASCRIPT </h1>
+   
+    <table style="background-color:red" id="tred">
+		<tr>
+			<td  id="vred" height="40px"></td>
+		</tr>
+	</table>
+   <table style="background-color:green" id="tgreen">
+		<tr>
+			<td id="vgreen"  height="40px"></td>
+		</tr>
+	</table>	
+	<table style="background-color:blue"  id="tblue">
+		<tr>
+			<td  id= "vblue" height="40px"></td>
+		</tr>
+	</table>
+   
+<hr>
+</body>
+</html>

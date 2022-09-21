@@ -1,0 +1,53 @@
+<!-- VERSIÓN CLIENTE: PIDE LOS DATOS Y GENERA LA VISTA -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+table, td, th {
+	border: 0px;
+}
+</style>
+</head>
+<script>
+	
+  const cargardatos = async () => {
+  const url = "07s.php";
+  const res = await fetch(url);
+  var datos = await res.json();
+  var nred  =  datos[0];
+  var ngreen = datos[1];
+  var nblue  = datos[2];
+  document.getElementById("tred")  .width  =  nred; 
+  document.getElementById("tgreen").width  =  ngreen;
+  document.getElementById("tblue") .width  =  nblue;
+  document.getElementById("vred") .innerHTML   = " Rojo("+nred+")";
+  document.getElementById("vgreen").innerHTML  = " Verde("+ngreen+")";
+  document.getElementById("vblue") .innerHTML  = " Rojo("+nblue+")";
+  setTimeout (cargardatos,2000);
+};
+	
+	
+</script>
+<body onload="cargardatos()">
+	<h1> CON JAVASCRIPT + GET </h1>
+   
+    <table style="background-color:red" id="tred">
+		<tr>
+			<td  id="vred" height="40px"></td>
+		</tr>
+	</table>
+   <table style="background-color:green" id="tgreen">
+		<tr>
+			<td id="vgreen"  height="40px"></td>
+		</tr>
+	</table>	
+	<table style="background-color:blue"  id="tblue">
+		<tr>
+			<td  id= "vblue" height="40px"></td>
+		</tr>
+	</table>
+   
+<hr>
+</body>
+</html>
