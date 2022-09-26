@@ -20,6 +20,7 @@ $n3 = 1;
 for($i = 0;$i < $n2;$i++){
     $n3 = $n1 * $n3;
 }
+echo "Potencia: $n1 ** $n2 = ".$n3."<br/>";
 ?>
 <hr>
 <?php show_source(__FILE__); ?>
