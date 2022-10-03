@@ -83,7 +83,7 @@
     $minimo = valorMinimo($numeros);
     $repetido = valorRepetido($numeros);
     echo "<br> Máximo = $maximo <br> Mínimo = $minimo <br> Moda = $repetido ";
-    $maximo = max($numeros);
+    $maximo = max($numeros); 
     $minimo = min($numeros);
     $repetido = valorRepetido2($numeros);  
     echo "<br> Máximo = $maximo <br> Mínimo = $minimo <br> Moda = $repetido ";
