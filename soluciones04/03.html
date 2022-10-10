@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container"  style="width: 600px;">
+		<div id="header">
+			<h1>FORMULARIOS CON CONTROLES HTML5</h1>
+		</div>
+
+		<div id="content">
+			<form autocomplete="on" action="03.php">
+	
+
+				NUMERO 1 (number):<input type="number" name="numero1" value="50" /><br>
+				NUMERO 2 (range [10-100]): 10 <input type="range" name="numero2"  min="10" max="100" value="50" /> 100
+	            <br>
+				Estaciones (list):<input list="estaciones" name="estacion">
+				<datalist id="estaciones">
+					<option value="Primavera">
+					<option value="Verano">
+					<option value="Otoño">
+					<option value="Invierno">
+				</datalist><br>
+				<br /> Color favorito (COLOR):
+				<input type="color"name="colorFavorito"> <br />
+				 Buscar (search): <input type="search" name="busca"> <br /> 
+				 Nombre (text) : <input type="text" name="nombre"> <br />
+				 Apellido (text):<input type="text" name="apellido"> <br /> 
+				 E-mail (email): <input type="email" name="email" autocomplete="off"> <br />
+				Fecha de nacimiento: <input type="date" name="fecha"> <br /> 
+				Edad (number)(de 0 a 150): <input type="number" name="edad" min="0" max="150"> <br /> 
+				Página personal (url): <input type="url" name="paginaPersonal"> <br>
+				Horario: De <input type="time" name="horaEntrada"> a <input type="time" name="horaSalida">
+				<br /> 
+				
+				<br /> <input type="submit">
+				
+			</form>
+
+		</div>
+	</div>
+</body>
+</html>

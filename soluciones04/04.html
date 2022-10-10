@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="container" style="width: 600px;">
+		<div id="header">
+			<h1>Formulario con múltiples campos</h1>
+		</div>
+
+		<div id="content">
+			<form name="f1" action="04.php" method="get">
+				<b>CAMPOS DE TEXTO:</b> <br /> Nombre: <input type="text"
+					name="txtNombre" /> <br /> Contraseña: <input
+					type="password" name="pswClave" /> <br />
+				<hr />
+				<b>RADIO:</b> <br /> &nbsp;&nbsp;
+				 Rojo <input type="radio" value="Rojo" name="rdSemaforo" /> <br /> &nbsp;&nbsp;
+				 Naranja <input type="radio" value="Naranja" name="rdSemaforo" checked="checked" />
+				<br /> &nbsp;&nbsp; 
+				 Verde <input type="radio" value="Verde" name="rdSemaforo" /> <br />
+				<hr />
+				<b>CHECKBOX:</b> <br /> &nbsp;&nbsp; Quiero recibir publicidad <input
+					type="checkbox" name="cbPublicidad" value="Publicidad" /> <br />
+				<b>MULTI CHECKBOX:</b> <br />
+				<!-- Se declara el nombre terminado en [] para tratarlo en PHP como un array -->
+				&nbsp;&nbsp; <label>Inglés</label> <input type="checkbox"
+					name="cbIdioma[]" value="English" /> &nbsp;&nbsp; Francés <input
+					type="checkbox" name="cbIdioma[]" checked="checked"
+					value="Français" /> &nbsp;&nbsp; Alemán <input type="checkbox"
+					name="cbIdioma[]" value="Deutch" />
+				<hr />
+				<b>SELECT: </b> <br /> <b>Simple:</b> <br /> Año de finalización
+				de estudios: <select name="selAnioFinEstudios">
+					<option value="2015">2015</option>
+					<option value="2016" selected="selected">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+				</select>
+				
+				
+				 <br /> <b>Múltiple:</b> <br /> Ciudades:
+				<!-- Se declara el nombre terminado en [] para tratarlo en PHP como un array -->
+				<select name="selCodigosPostales[]" multiple="multiple">
+					<option value="33">Asturias</option>
+					<option value="17">Gerona</option>
+					<option value="28" selected="selected">Madrid</option>
+					<option value="41">Sevilla</option>
+					<option value="50" selected="selected">Zaragoza</option>
+				</select> <br />
+				<hr />
+				<b>TEXTAREA:</b> <br /> Escriba sus comentarios:
+				<textarea name="txaComentarios" rows="5" cols="30"
+				 placeholder="Introduzca su comentario">
+
+				</textarea>
+				<hr />
+				<b>BOTONES:</b> <br /> 
+				 <input type="reset"   value="Resertear el formulario" />
+				 <input type="submit" value="Enviar formulario al servidor" />
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>
