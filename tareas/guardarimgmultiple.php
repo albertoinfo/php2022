@@ -129,7 +129,7 @@ function moverImagenADestino(string $nombrefichero, string $ficherotemporal): in
     if (file_exists(DIR_DESTINO . '/' . $nombrefichero)) {
         return ERROR_YA_EXISTE;
     } else {
-        if (move_uploaded_file($ficherotemporal, DIR . '/' . $nombrefichero)) {
+        if (move_uploaded_file($ficherotemporal, DIR_DESTINO . '/' . $nombrefichero)) {
             return SIN_ERRORES;
         } else {
             return ERROR_MOVER;

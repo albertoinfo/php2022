@@ -1,0 +1,4 @@
+#Deny from all ( Versiones anteriores a 2.4)
+#Require all denied
+Deny from all
+
