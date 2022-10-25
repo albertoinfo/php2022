@@ -62,6 +62,7 @@ session_start();
                     echo " Intento de ataque.... ";
                     die();
                 } 
+                
                 $_SESSION['token'] = uniqid(mt_rand(), true);
                 // Genero un nuevo token por si hay que genera un formulario
                 // ORDENES QUE SE PUEDEN REALIZAR SI EL USUARIO SE HA AUTENTICADO
