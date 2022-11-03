@@ -6,7 +6,7 @@ session_start();
 <meta charset="UTF-8">
 <title>Ejercicio Adivinar número </title>
 </head>
-<body>ç
+<body>
 <?php
 define ('MAXINTENTOS',5);
 

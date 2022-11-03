@@ -4,7 +4,7 @@
 </head>
 <body>
 <?php
-define('DIRECTORIO', '/home/alberto'); // Define el directorio que se va a procesar
+define('DIRECTORIO', '/home/alberto/Escritorio'); // Define el directorio que se va a procesar
 
 if (! is_dir(DIRECTORIO)) // Comprueba que realmente existe el directorio
     die("No existe el directorio " . DIRECTORIO);

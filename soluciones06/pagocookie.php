@@ -14,7 +14,7 @@ if (isset($_GET['nuevatarjeta'])) {
     echo "<img src='imagenes/waiting.gif' />";
     header("Refresh:3; url=\"".$_SERVER['PHP_SELF']."\"");
     echo "<body></html>";
-    exit();
+    exit();    
 }
 else {
     if (isset($_COOKIE['tipotarjeta'])){
