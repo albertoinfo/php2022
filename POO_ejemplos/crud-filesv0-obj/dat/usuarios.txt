@@ -1,0 +1,4 @@
+Fernando Pérez|admin|1234|Administrador Principal
+Ana Diáz|ana.diaz|123$%09|Jefa de Proyecto
+Luis García|luisg|luisito90|Administrador BD
+Pepito|pepe23|asdklfjs|Usuario nuevo
