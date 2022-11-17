@@ -1,3 +1,7 @@
+<?php
+$_SESSION["token"] = md5(uniqid(mt_rand(), true));
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +16,7 @@
 </div>
 <div id="content">
 <p> Datos del usuario: </p>
+
 <form   method="POST">
 <table>
  <tr><td>Nombre </td> 
@@ -24,6 +29,7 @@
  <tr><td>Comentario </td><td>
  <input type="text" 	name="comentario" value="<?=$comentario ?>" <?= ($orden == "Detalles")?"readonly":"" ?> size=20></td></tr>
  </table>
+ <input type="hidden" name="csrf" value="<?php echo $_SESSION["token"]; ?>">
  <input type="submit"	 name="orden" 	value="<?=$orden?>">
  <button onclick="window.history.back();"> Volver </button>
 </form> 

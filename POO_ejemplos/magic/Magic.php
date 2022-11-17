@@ -4,7 +4,6 @@ class Magic
 {
     private $atributo1;
     private $atributo2;
-    private $varios= [];
     
     public function __construct(int $valor=0){
         $this->atributo1 = $valor;  

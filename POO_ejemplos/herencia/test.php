@@ -4,6 +4,9 @@ require_once('CuentaBancariaConCredito.php');
 
 $cb = new CuentaBancaria(100);
 $cc = new CuentaBancariaConCredito(100,0.5);
+$aux = new CuentaBancariaConCredito();
+
+unset($aux);
 
 echo " Cuentas creadas".CuentaBancaria::totaldeCuentas()."\n";
 

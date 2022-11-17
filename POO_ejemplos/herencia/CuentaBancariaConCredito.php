@@ -17,6 +17,11 @@ class CuentaBancariaConCredito extends CuentaBancaria
         $this->interes = $interes;
     }
     
+    public function __destruct()
+    {
+        echo "\n Objeto de clase ".get_class($this)." Destruido \n";
+    }
+
     
     // Abono, decremento el saldo en la cantidad indicada como parámetro.
     // Sobreescribo la clase padre
