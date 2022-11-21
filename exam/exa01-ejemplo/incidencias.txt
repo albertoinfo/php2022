@@ -1,18 +1,22 @@
-"23:11:2021 12:40",Pepito,"asdasd  adsd askjdkadsJ",1,127.0.0.1
+"21:11:2022 13:09",Alberto,"INTERNET INTERNET",1,127.0.0.1
+"21:11:2022 13:12",SAD,ASDASD,1,127.0.0.1
+"21:11:2022 13:09",Alberto,"INTERNET INTERNET",1,127.0.0.1
 "01:12:2020 22:45",Ramón,"No arranca la Base de Datos",2,127.0.0.1
 "15:11:2020 09:21",Jesús,"No hay conexión con la Base de datos",2,127.0.0.1
 "02:12:2020 10:56",Guille,hola,2,192.168.105.97
 "02:12:2020 10:55",laura,Hola,2,192.168.105.1
 "13:11:2020 10:10",Ramón,"Error en el proxy",2,80.44.12.4
 "02:12:2020 10:55",a,aas,2,192.168.105.1
-"02:12:2020 10:56",Jose,"Aquí estamos.",3,192.168.105.1
-"02:10:2020 21:52",Ana,"Cambiar pantalla en A206",3,192.168.12.2
-"11:05:2022 23:12",Manolo,"No funciona la impresora A2343",3,127.0.0.1
 "11:05:2022 23:13",Luis,"jskdjkdjdskj jskdjs",3,127.0.0.1
-"02:12:2020 10:55",Jose,"Aquí estamos.",3,192.168.105.1
 "01:12:2020 22:25",Marisa,"No funciona la conexión con server201",3,127.0.0.1
+"11:05:2022 23:12",Manolo,"No funciona la impresora A2343",3,127.0.0.1
+"02:12:2020 10:56",Jose,"Aquí estamos.",3,192.168.105.1
+"02:12:2020 10:55",Jose,"Aquí estamos.",3,192.168.105.1
+"02:10:2020 21:52",Ana,"Cambiar pantalla en A206",3,192.168.12.2
+"21:11:2022 13:13",Alberto,"INTERNET INTERNET",3,127.0.0.1
 "23:11:2021 12:40",Pepito,"asdasd  adsd askjdkadsJ",4,127.0.0.1
 "23:11:2021 12:40",Pepito,"asdasd  adsd askjdkadsJ",4,127.0.0.1
 "23:11:2020 15:40",Ana,"instalar java",4,192.168.15.23
 "02:12:2020 10:55",Alberto,"Todo bien",4,192.168.105.200
 "02:12:2020 10:56",lola,mwdi,4,192.168.105.1
+"23:11:2021 12:40",Pepito,"asdasd  adsd askjdkadsJ",4,127.0.0.1
