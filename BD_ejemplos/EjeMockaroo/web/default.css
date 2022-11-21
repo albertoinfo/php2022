@@ -1,0 +1,80 @@
+body {
+    background: silver;
+    text-align: justify;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color: #757E82;
+  }
+  
+  #container {
+    margin: 0 auto;
+    width: 800px;
+    background:#fff;
+    border: solid 1px;
+  }
+  
+  #header {
+    background: blue;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  
+  #header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  #header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  #content {
+    background: white;
+    clear: left;
+    padding: 20px;
+  }
+  
+  #content h2 {
+    color:#000;
+    font-size: 160%;
+    margin: 0 0 .5em;
+  }
+  
+  #aviso {
+      background: red;
+      color: black;
+  }
+  
+  li {
+    padding: 18px;
+  }
+  
+  #aviso {
+      background: red;
+      color: black;
+  }
+  
+  a {
+    color: #429;
+    text-decoration: none;
+  }
+  textarea {
+     resize: none;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding: 4px;
+  }
+  
+  #footer {
+    color: white;
+    background: blue;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    height: 1%;
+  }
