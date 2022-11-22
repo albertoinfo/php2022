@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     $login = $_POST['login'];
     $passwd = $_POST['passwd'];
     // Sin filtro
-    $query = "SELECT Nombre FROM Usuario WHERE login = '$login' and passwd = '$passwd'";
+    $query = "SELECT Nombre FROM Usuarios WHERE login = '$login' and passwd = '$passwd'";
     echo "<br> $query <br>";
     
     // ERROR - POSIBLE INYECCIÓN DE CÓDIGO 
@@ -58,11 +58,11 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     // 1º MEDIDA Filtrar: escapa caracteres peligrosos
     $login = $conex->escape_string($_POST['login']);
     $passwd = $conex->escape_string($_POST['passwd']);
-    $query = "SELECT Nombre FROM Usuario WHERE login = '$login' and passwd = '$passwd'";
+    $query = "SELECT Nombre FROM UsuarioS WHERE login = '$login' and passwd = '$passwd'";
     echo "<br> $query <br>";
 
     // 2º MEDIDA Utilizar: Sentencia preparada
-    $stmt = $conex->prepare("SELECT * FROM Usuario WHERE login = ? and passwd = ?");
+    $stmt = $conex->prepare("SELECT * FROM Usuarios WHERE login = ? and passwd = ?");
     $stmt->bind_param("ss", $login, $passwd);
 
     $stmt->execute();
