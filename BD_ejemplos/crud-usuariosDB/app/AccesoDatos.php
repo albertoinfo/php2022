@@ -90,7 +90,7 @@ class AccesoDatos {
     public function modUsuario($user):bool{
       
         $stmt_moduser   = $this->dbh->prepare("update Usuarios set nombre=?, password=?, comentario=? where login=?");
-        if ( $stmt_moduser == false) die ($this->dbh->error);
+        if ( $stmt_moduser == false) die ($this->dbh->error."En la línea:".__LINE__);
 
         $stmt_moduser->bind_param("ssss",$user->nombre,$user->password, $user->comentario, $user->login);
         $stmt_moduser->execute();
