@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     // 1º MEDIDA Filtrar: escapa caracteres peligrosos
     $login = $conex->escape_string($_POST['login']);
     $passwd = $conex->escape_string($_POST['passwd']);
-    $query = "SELECT Nombre FROM UsuarioS WHERE login = '$login' and passwd = '$passwd'";
+    $query = "SELECT Nombre FROM Usuarios WHERE login = '$login' and passwd = '$passwd'";
     echo "<br> $query <br>";
 
     // 2º MEDIDA Utilizar: Sentencia preparada

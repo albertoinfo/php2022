@@ -6,7 +6,7 @@ class Usuario
     public $nombre;
     public $login;
     public $password;
-    public  $comentario;
+    public $comentario;
     
 }
 

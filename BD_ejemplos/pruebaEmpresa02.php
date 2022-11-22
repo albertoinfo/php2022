@@ -19,11 +19,12 @@ if ($conex->connect_errno) {
 $query = "SELECT EMP_NO,APELLIDO, SALARIO FROM EMPLEADOS";
 if ($result = $conex->query( $query)) {
     
+    echo " Nº de filas".$result->num_rows."</br>";
     // Array Asociativo por nombre de campo
     echo "<table border=1><th>Nº</th><th>Apellido</th><th>Salario</tr>";
     while ( $fila = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>$fila[EMP_NO]</td>";
+        echo "<td>".$fila['EMP_NO']."</td>";
         echo "<td>$fila[APELLIDO]</td>";
         echo "<td>$fila[SALARIO]</td>";
         echo "</tr>";
@@ -64,7 +65,7 @@ if ($result = $conex->query( $query)) {
     while ( $obj = $result->fetch_object() ) {
         echo "<tr>";
         echo "<td>$obj->EMP_NO</td>";
-        echo "<td>$obj->apellido</td>"; //Produce ERROR
+        echo "<td>$obj->APELLIDO</td>"; 
         echo "<td>$obj->SALARIO</td>";
         echo "</tr>";
     }
