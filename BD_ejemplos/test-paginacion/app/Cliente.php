@@ -2,8 +2,8 @@
 
 class Cliente {
 
-    id INT,
-	first_name VARCHAR(50),
+    private $id;
+	private $first_name; 
 	last_name VARCHAR(50),
 	email VARCHAR(50),
 	gender VARCHAR(50),
