@@ -1,13 +1,28 @@
 <?php
-
 class Cliente {
 
     private $id;
-	private $first_name; 
-	last_name VARCHAR(50),
-	email VARCHAR(50),
-	gender VARCHAR(50),
-	ip_address VARCHAR(20),
-	telefono VARCHAR(50)
+    private $first_name;
+    private $last_name;	
+    private $email;	
+    private $gender;
+    private $ip_address;
+    private $telefono;
+    
+
+    
+    function __set($name, $value)
+   {
+    if ( property_exists($this,$name)){
+        $this->$name = $value;
+    }
+   }
+
+   function __get($name)
+   {
+       if ( property_exists($this,$name)){
+           return $this->$name;
+       }
+   }
 
 }
