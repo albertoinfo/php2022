@@ -1,4 +1,9 @@
+<?php
+/*
+Ejemplo de control de acceso consultando a una base de datos
 
+*/
+?>
 
 
 <!DOCTYPE html>
@@ -15,8 +20,7 @@
 <div id="content">
 
 <?php
-// EJEMPLO DE CONEXIÓN A LA BASE DE DATOS
-// Utilizando el interfaz PDO
+$hayerror=true;
 
 if ( $_SERVER['REQUEST_METHOD'] == "POST"){
     
@@ -46,6 +50,7 @@ if ( $_SERVER['REQUEST_METHOD'] == "POST"){
             //var_dump($fila);
             echo " $fila[Nombre]: Bienvenido al sistema <br>";
             echo " Has entrado $fila[accesos] veces <br>";
+            $hayerror=false;
             $fila['accesos']++;
             $consulta = "UPDATE Users SET accesos = $fila[accesos]  where login ='$login'";
             // Consulta directa
@@ -62,21 +67,22 @@ if ( $_SERVER['REQUEST_METHOD'] == "POST"){
     
 }
 ?>
-			<form name='entrada' method="POST" >
-				<table  style="border: node; ">
-					<tr>
-						<td>identificador:</td>
-						<td><input type="text" name="login" size="20"></td>
-					</tr>
-					<tr>
-						<td>Contraseña:</td>
-						<td><input type="password" name="passwd" size="20"></td>
-					</tr>
-				</table>
-				<input type="submit" name="orden" value="Entrar">
-			</form>
-		</div>
-		<p>
-	</div>
+<?php if  ( $_SERVER['REQUEST_METHOD'] == "GET" || $hayerror ): ?>
+	<form name='entrada' method="POST" >
+	<table  style="border: node; ">
+		<tr>
+		<td>identificador:</td>
+		<td><input type="text" name="login" size="20"></td>
+		</tr>
+		<tr>
+		<td>Contraseña:</td>
+		<td><input type="password" name="passwd" size="20"></td>
+		</tr>
+	</table>
+	<input type="submit" name="orden" value="Entrar">
+    </form>
+<?php endif ?>
+</div>
+</div>
 </body>
 </html>
