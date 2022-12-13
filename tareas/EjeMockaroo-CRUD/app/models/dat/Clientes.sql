@@ -1,12 +1,15 @@
 create table Clientes (
-	id INT,
+	id INT(8) auto_increment not null,
 	first_name VARCHAR(50),
 	last_name VARCHAR(50),
 	email VARCHAR(50),
 	gender VARCHAR(50),
 	ip_address VARCHAR(20),
-	telefono VARCHAR(50)
-);
+	telefono VARCHAR(50),
+	CONSTRAINT pk_usuarios PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 insert into Clientes (id, first_name, last_name, email, gender, ip_address, telefono) values (1, 'Cletis', 'Desporte', 'cdesporte0@ucla.edu', 'Male', '205.183.245.97', '317-116-9163');
 insert into Clientes (id, first_name, last_name, email, gender, ip_address, telefono) values (2, 'Vasili', 'McCuthais', 'vmccuthais1@hugedomains.com', 'Male', '121.41.29.60', '154-655-1829');
 insert into Clientes (id, first_name, last_name, email, gender, ip_address, telefono) values (3, 'Consalve', 'Sustins', 'csustins2@tripod.com', 'Male', '131.174.88.183', '543-208-4065');
